@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Kumbh Sans", sans-serif;
+    scroll-behavior: smooth;
+    
+}.header {
+    display: flex;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto; 
+    justify-content: space-between;
+    border-bottom: 2px solid hsla(218, 14%, 85%, 0.561);
+}
+
+.l1{
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+     
+}
+.l1 h3{
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color:hsl(219, 9%, 45%);
+}
+h3:hover{
+    color:  hsl(26, 100%, 55%);
+}
+.r1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.r1 img{
+    padding-left: 30px;
+}
+.r1 .avt{
+    width: 50px;
+}
+.dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.dis img{
+    width: 500px;
+    border-radius: 20px;
+}
+ .data{
+    padding: 5%;
+    margin-left: 50px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    h5{
+        
+        text-decoration: line-through;
+        color:hsl(220, 14%, 75%);
+        padding: 0;
+    }
+}
+ .price{
+    display: flex;
+  align-items: center;
+  width: 200px;
+  height: 5px;
+  margin-top: 50px;
+  h5{
+   margin-left: 20px;
+    background-color: hsl(25, 100%, 94%);
+    padding: 7px 15px;
+    color:  hsl(26, 100%, 55%);
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+}
+.data p{
+    color:hsl(219, 9%, 45%);
+}
+.data label{
+    color:  hsl(26, 100%, 55%);
+    font-size: 20px;
+    text-transform: uppercase;
+   font-weight: 700;
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    background-color:  hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    img{
+        height: 20px;
+        width: 20px;
+        padding-right: 10px;
+    }
+}
+.btn button:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    background-color: transparent;
+    color: hsl(26, 100%, 55%);
+}
+.thumb{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    img{
+        margin-right: 30px;
+        border-radius: 10px;
+        width: 100px;
+        border: 3px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+    img:hover{
+        border-color:  hsl(26, 100%, 55%);
+    }
+}
+
