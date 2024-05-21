@@ -1,0 +1,277 @@
+body{
+    height: auto;
+    width: auto;
+}
+header {
+   
+    height: auto;
+}
+
+.head {
+    background-color: black;
+    color: white;
+   
+    height: 7vh;
+    font-size: small;
+    display: flex;
+    align-items: center; 
+}
+
+#left {
+    margin-left: 10px;
+}
+
+#right {
+    margin-left: auto; 
+    margin-right: 30px;
+}
+
+
+.nav {
+    height: 7vh;
+    background-color: rgb(196, 212, 243);
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    color: cornflowerblue;
+    text-transform: uppercase;
+   margin-left: 30px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.navbar {
+    margin-left: auto; 
+}
+
+#nav {
+    padding: 15px;
+    color: black;
+}
+
+#nav:hover {
+    color: cornflowerblue;
+}
+a{
+    text-decoration: none;
+}
+.intro{
+    height: auto;
+    width: 100%;
+    background-color: rgb(196, 212, 243);
+  
+    padding-top: 30px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    text-align: left;
+  padding-left: 70px;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+ 
+    margin-bottom: 0;
+}
+    
+
+.detail-box{
+box-sizing: border-box;
+position: relative;
+}
+.img-box{
+    box-sizing: border-box;
+position: relative;
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.detail-box {
+    max-width: 400px; 
+    margin-right: 20px; 
+   
+}
+
+.img-box img {
+    max-width: 100%;
+    height: 400px;
+   
+    
+}
+
+.detail-box h1{
+    color: cornflowerblue;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .detail-box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.detail-box a {
+    display: inline-block;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 45px;
+    background-color: #ff8a1d;
+    border: 1px solid #ff8a1d;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 15px;
+  }
+  .detail-box a:hover {
+    background-color: transparent;
+    color: #ff8a1d;
+  }
+.about{
+    height: auto;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    .about_box {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+}
+.row h1{
+    text-transform: uppercase;
+    color: cornflowerblue;
+    text-align: left;
+}
+
+.about_box {
+    max-width: 400px; 
+    margin-right: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.about-img img {
+    margin-top: 70px;
+  
+    height: 235px;
+    
+}
+.contact {
+    height: auto;
+    width: 100%;
+    background-color: rgb(196, 212, 243);
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+.form{
+    max-width: 400px; 
+    margin-right: 200px;     
+    
+}
+
+.input {
+    width: 100%; 
+    height: 40px;
+    margin-top: 20px;
+    border: transparent;
+    box-shadow: black 2px 2px 20px 2px;
+    text-indent: 20px;
+    box-sizing: border-box; 
+}
+.Message {
+    width: 100%; 
+    height: 100px;
+    margin-top: 20px;
+    border: transparent;
+    box-shadow: black 2px 2px 20px 2px;
+    text-indent: 20px;
+    box-sizing: border-box; 
+}
+
+.contact h3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: larger;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+.form button {
+    margin-top: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 45px;
+    background-color: #04ff00;
+    border: 1px solid #40ff00;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.form button:hover {
+    background-color: #b0ff04;
+    color: white;
+}
+
+.form {
+    flex: 1;
+   
+   
+    
+}
+
+.con-img {
+    flex: 1;
+    display: flex;
+}
+
+.con-img img {
+    margin-top: 50px;
+   width: auto;
+    height: 400px; 
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 5px 10px; 
+    }
+
+    
+
+    .con-img {
+        margin-left: 0;
+    }
+}
+

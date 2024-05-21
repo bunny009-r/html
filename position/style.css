@@ -1,0 +1,30 @@
+*{
+    box-sizing: \;
+}
+.head{
+    margin: 50px;
+    border: 2px solid red;
+}
+.l{
+   
+    height: 50px;
+    width: 100px;
+    color: white;
+    
+}
+a{
+    text-decoration: none;
+}
+.home{
+    position: static;
+}
+.buy{
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+.about{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

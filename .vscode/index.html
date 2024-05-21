@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/random');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: #555;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus {
+            border-color: #4caf50;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+           
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="msg.html">
+        <div>
+            <h1>Registration Form</h1>
+        </div>
+        <div>
+            <label for="first-name">First Name</label>
+            <input type="text" required id="first-name" placeholder="Enter First Name">
+            <label for="last-name">Last Name</label>
+            <input type="text" required id="last-name" placeholder="Enter Last Name">
+        </div>
+        <div>
+            <label for="email">Enter Email</label>
+            <input type="email"required id="email" placeholder="Enter email id">
+        </div>
+        <div>
+            <label>Gender</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label>
+        </div>
+        <div>
+            <label for="number">Enter Your Number</label>
+            <input type="text" id="number" name="number" pattern="[0-9]{10}" title="Please enter a 10-digit number" placeholder="Enter Your Number" required>
+        </div>
+        
+        
+        <div>
+            <label for="lang">Language</label>
+            <input type="checkbox" name="lang" id="hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" name="lang" id="english">
+            <label for="english">English</label>
+            <input type="checkbox" name="lang" id="bhojpuri">
+            <label for="bhojpuri">Bhojpuri</label>
+        </div>
+        <div>
+            <label for="dob" required >Date Of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div>
+            <button type="submit" >Submit</button>
+        </div>
+        
+        
+        
+    </form>
+</body>
+</html>

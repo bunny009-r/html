@@ -1,0 +1,146 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+     padding: 20px 20px 20px ;
+     border: solid white 5px;
+     text-align: center;
+     border-radius: 5px;
+     
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+}
+.a{
+    color: darkblue;
+   
+    text-shadow:2px 3px 2px #05817c;
+}
+.a:hover {
+    color: hotpink;
+  }
+.a:active {
+    color: blue;
+  }
+img{
+    height: 200px;
+  clip-path: ellipse(39% 30% at 50% 61%);
+  border: solid 2px #FFDEE9;
+ 
+
+}
+
+
+h1{
+    color: #FFDEE9;
+   
+}
+.main{
+    text-align: center ;
+    background-image: url('./pexels-vlad-alexandru-popa-1402787.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+   
+}
+.blur{
+    border: solid 2px white;
+    margin: 20px 20px 20px 40px;
+ border-top-color: red;
+ border-bottom-color: red;
+border-style: dotted;
+box-sizing: border-box;
+background-color: #66666697;
+    
+}
+#para{
+    color: white;
+    text-align: justify;
+    padding: 0px 40px;
+    
+}
+#para:hover{
+   color: burlywood;
+   
+}
+#About{
+    color: red;
+    text-align: left;
+    padding:  0px 40px;
+}
+#About:hover{
+    color: brown;
+}
+#body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    
+}
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #666;
+}
+input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="radio"],
+        input[type="password"],
+        input[type="checkbox"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus {
+            border-color: #4caf50;
+        }
+
+        input[type="radio"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+           
+        }
+
+        #button {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+       #button:hover {
+            background-color: #45a049;
+        }

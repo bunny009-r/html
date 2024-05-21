@@ -1,0 +1,143 @@
+
+body{
+    height: auto;
+    width: 100vw;
+}
+.banner{
+    width: 100vw;
+    height: auto;
+    margin-top: -17px;
+}
+
+.box{
+    float: left;
+    width: 45%;
+}
+
+.left{
+    text-align: left;
+    margin-left: 90px;
+}
+
+.left h1{
+    color: rgb(147, 200, 42);
+    text-shadow: 5px 5px 5px yellow;
+    font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.left p{
+    text-align: left;
+}
+
+.right{
+    background-color: yellowgreen;
+    padding-top: 80px;
+    padding-right: 20px;
+    height: auto;
+    align-content: center;
+   
+}
+
+.right img{
+    height: 380px;
+    width: auto;
+}
+.right img:hover{
+    height: 400px;
+}
+
+#top{
+    text-align: right;
+}
+
+.nav{
+    width: 100%;
+    text-align: left;
+    height: auto;
+}
+
+.l{
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-right: 60px;
+}
+label{
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: greenyellow;
+   
+}
+label:hover{
+    font-size: larger;
+}
+
+.r{
+    text-align: right;
+    background-color: yellowgreen;
+    padding-right: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    
+}
+a{
+    margin: 30px;
+    text-decoration: none;
+    font-weight: 500; color: black;
+}
+a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+button{
+    height: 40px;
+    width: 120px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.Buy{
+    background-color: yellowgreen;
+    border: none;
+    
+}
+.Buy:hover{
+    background-color: transparent;
+    color: yellowgreen;
+    border: solid yellowgreen;
+}
+.read{
+    background-color: transparent;
+    border: none;
+
+}
+.read:hover{
+    color: yellowgreen;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+    .left,
+    .right {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .left h1 {
+        font-size: 40px;
+    }
+    .right img {
+        height: auto;
+        width: 100%;
+    }
+}
+

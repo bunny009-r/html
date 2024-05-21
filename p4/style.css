@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+
+.header{
+    box-sizing: border-box;
+    position: fixed; 
+    /* background-color: rgb(37, 66, 40);*/
+    background-color: white;
+    height: 80px;
+    padding: 0px 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.l{
+    width: 500px;
+}
+.r{
+    width: 200px;
+}
+.l a{
+    font-weight: 400; 
+    margin:0px 25px;
+    text-transform: uppercase;
+   
+}
+.header a{
+    font-size: 15px;
+    color: gray;
+ 
+    text-decoration: none;
+    font-family: "osefin Sans", sans-serif;
+    transition: all 1s ease;
+    display: inline-block;
+}
+.header a:hover{
+   scale: 1.5;
+    color: darkolivegreen;
+    
+    
+}
+.r a{
+    
+    margin-right: 30px;
+   font-size: 20px;
+}
+
+.center img{
+   margin-left: -300px;
+    height: 70px; 
+}
+.hero {
+    box-sizing: border-box;
+    display: flex;
+    background-image: url('./img/hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh; 
+}
+.con{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 150px 100px;
+
+   
+}
+.con  img{
+    width: 80%;
+   
+}
+.con p{
+    color: white;
+    font-family: "brandon-grotesque", sans-serif;
+}
+.con button{
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 30px;
+}
+.t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    height: 200px;
+}
+
+.sec a {
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.sec a:hover {
+    transform: translateY(-10px);
+    text-decoration: underline gray;
+}
+
+.b .r1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.b .box1,
+.b .box2 ,.b .box3 ,.b .box4 {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+#mens  .box1 {
+    grid-column: span 2;
+    background-image: url('./img/1.webp');
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#mens  .box2 {
+    background-image: url('./img/2.webp');
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#womens  .box1 {
+    grid-column: span 2;
+    background-image: url('./img/w1.webp');
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#womens  .box2 {
+    background-image: url('./img/w2.webp');
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.b .r2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px 20px;
+    gap: 20px;
+   
+}
+#mens  .box3{
+    background-image: url('./img/3.webp');
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#mens  .box4{
+    background-image: url('./img/4.webp');
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#womens  .box3{
+    background-image: url('./img/w3.webp');
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#womens  .box4{
+    background-image: url('./img/w4.webp');
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    span{
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    span:hover{
+        text-decoration: underline 2px black;
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size:20px ;
+        padding: 0px 10px;
+    }
+}
+.hidden {
+    display: none;
+}
+.selected {
+    text-decoration: underline 2px black;
+}
+.rateing{
+    width: 100%;
+    height: 300px;
+   background-image: url('./img/rev.webp');
+   background-position: center;
+}
+.rise{
+    background-image: url('./img/rise.webp');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.lrise{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    h1{
+        font-size: 70px;
+        font-family: "Dosis";
+        font-weight: 600;
+    }
+    p{
+        margin-top: -20px;
+        font-size: 20px;
+        font-family: "Josefin Sans";
+        font-weight: 350;
+    }
+    a{
+        padding: 2% 5%;
+       
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        justify-self: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+.video-container {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: -23px;
+}
+
+#video-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #EEF2F4;
+    .h11{
+        font-family:Dosis ;
+        font-size: 20px;
+       
+    }
+    .itxt{
+        display: flex;
+       border: none;
+        .gg{
+            width: 120px;
+            margin: 0px 50px;
+            text-align: center;
+            p{
+                margin-top: -10px;
+            }
+        }
+    }
+}
+.read{
+    background: url('./img/cali.webp');
+    height: 100vh;
+   
+    background-position: center;
+    background-size: cover;
+}
+.val{
+    padding: 200px 100px;
+    color: white;
+    h1{
+        font-family:Dosis ;
+        font-size: 50px;
+        
+    }
+    p{
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        width: 300px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+.hand{
+   display: flex;
+  
+   background-color: #ece6db;
+   .hd{
+    background-image: url('./img/hand.webp');
+    width: 150%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+   }
+   .cc{
+   padding: 0px 70px;
+   width: 70%;
+   h1{
+    font-family:Dosis ;
+    font-size: 50px;
+    width: 200px;
+   
+   }
+   p{
+   
+    font-family: "Josefin Sans";
+    text-align: justify;
+    margin-bottom: 30px;
+   }
+   a{
+       background-color: rgb(255, 255, 255);
+       padding: 10px 50px;
+       border-radius: 30px;
+       text-decoration: none;
+       color: black;
+       font-weight: 600;
+    
+   }
+   }
+   
+}
+.best{
+   text-align: center;
+   margin-top: 100px;
+   h1{
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 100px;
+   }
+    .watch{
+        padding: 50px;
+        width: 100%;
+      display: flex;
+      justify-content: center;
+      .w{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 70%;
+        }
+        p{
+            color: gray;
+        }
+        h5{
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h4{
+            font-weight: 500;
+            font-size: smaller;
+        }
+      }
+      .w > * {
+        margin: 0; 
+      }
+    }
+}

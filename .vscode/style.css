@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+table{
+    width: 100vw;
+    height: 100vh;
+}
+
+th{
+    background-color: rgba(152, 203, 23, 0.761);
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    text-decoration: dashed;
+    text-shadow: 2px 2px 2px #ff0000;
+    text-transform: capitalize;
+   
+}
+td{
+    font-family: "Caveat", cursive;
+    text-align: center;
+    font-size: larger;
+    color: blueviolet;
+    
+}
+tr{
+    background-color:beige;
+}
+#time{
+    color:red;
+    text-shadow: 2px 2px 2px #000000;
+    background-color: rgba(97, 223, 55, 0.761);
+}
+.a{
+    background-color:bisque;
+}

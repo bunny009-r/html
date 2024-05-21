@@ -1,0 +1,79 @@
+.aaa {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff; /* Text color */
+  transition: background-color 0.5s ease;
+  background-color: #282c34; /* Initial background color */
+}
+.navbar {
+  background-color: #343a40; /* Dark navbar background color */
+  transition: background-color 0.5s ease;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff; /* Brand color */
+}
+.nav-link {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffd166; /* Nav link hover color */
+}
+.profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 10px;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Hide the dropdown arrow */
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-item {
+  color: #343a40;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-item:hover {
+  background-color: #007bff; /* Dropdown item hover background color */
+  color: #fff; /* Dropdown item hover text color */
+}
+/* Animated futuristic section */
+.futuristic-section {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff0080, #ff00bf, #9000ff, #3200ff, #006aff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Custom styles for feature cards */
+.feature-card {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}

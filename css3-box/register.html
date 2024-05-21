@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+
+        h1 {
+            text-align: center;
+            color: #555;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }    
+       
+
+    </style>
+</head>
+<body id="body">
+    <form action="msg.html">
+        <div>
+            <h1>Registration Form</h1>
+        </div>
+        <div>
+            <label for="first-name">First Name</label>
+            <input type="text" required id="first-name" placeholder="Enter First Name">
+            <label for="last-name">Last Name</label>
+            <input type="text" required id="last-name" placeholder="Enter Last Name">
+        </div>
+        <div>
+            <label for="email">Enter Email</label>
+            <input type="email"required id="email" placeholder="Enter email id">
+        </div>
+        <div>
+            <label for="number">Enter Your Number</label>
+            <input type="text" id="number" name="number" pattern="[0-9]{10}" title="Please enter a 10-digit number" placeholder="Enter Your Number" required>
+        </div>
+        <div>
+            <label>Gender</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label>
+        </div>
+        
+        <div>
+            <label for="dob" required >Date Of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" required id="pass" placeholder="Enter Password">
+        </div>
+        <div>
+            <button id="button" type="submit" >Submit</button>
+            <button type="submit" id="button" ><a id="button" href="index.html">Cancle</a></button>
+           
+        </div>
+        <div>
+            <a href="login.html"> Already have a account. Log in?</a>
+        </div>
+        
+        
+    </form>
+</body>
+</html>

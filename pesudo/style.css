@@ -1,0 +1,48 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 5px;
+}
+.box:hover{
+    background-color: blue;        
+}
+/* a:link{
+    color: red;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color: yellow;
+}
+
+ input:required{
+    background-color: rgb(210, 185, 232);
+}
+input:optional{
+    background-color: aqua;
+}
+input:read-only{
+    background-color: chartreuse;
+}
+input:read-write{
+    color: white;
+}
+input:disabled{
+    background-color: black;
+}
+input:focus{
+    background-color: red;
+    border-radius: 50px;
+}
+input:user-invalid{
+    color: green;
+} */
+.boxx{
+    border: 2px solid slateblue;
+}
+.box:nth-last-child(1)
+{
+    background-color: blue;
+}

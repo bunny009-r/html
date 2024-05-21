@@ -1,0 +1,168 @@
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 7vh;
+    font-size: small;
+    display: flex;
+    align-items: center; 
+}
+
+#left {
+    margin-left: 10px;
+}
+
+#right {
+    margin-left: auto; 
+    margin-right: 10px;
+}
+
+
+.nav {
+    height: 7vh;
+    background-color: rgb(196, 212, 243);
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    color: cornflowerblue;
+    text-transform: uppercase;
+    margin: 5px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.navbar {
+    margin-left: auto; 
+}
+
+#nav {
+    padding: 15px;
+    color: black;
+}
+
+#nav:hover {
+    color: cornflowerblue;
+}
+
+
+.intro {
+    height: auto; 
+    width: 100%;
+    background-color: rgb(196, 212, 243);
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-box {
+    margin-top: auto;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.img-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.about {
+    width: 100%;
+    background-color: white;
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.row h1 {
+    text-transform: uppercase;
+    color: cornflowerblue;
+    text-align: left;
+    width: 100%; /* Ensure the heading takes full width */
+}
+
+.about_box {
+    max-width: 400px;
+    margin-right: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+/* Contact section styles */
+.contact {
+    width: 100%;
+    background-color: rgb(196, 212, 243);
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    flex: 1;
+    padding: 0 20px; /* Adjust padding */
+}
+
+.input,
+.Message {
+    width: 100%; /* Make inputs full width */
+    height: 40px;
+    margin-top: 20px;
+    border: transparent;
+    box-shadow: black 2px 2px 20px 2px;
+    text-indent: 20px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.Message {
+    height: 100px; /* Increase height for message input */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.contact h3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: larger;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+.form button {
+    margin-top: 20px;
+    width: 100%; /* Make button full width */
+}
+
+.con-img {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.con-img img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0; /* Remove top margin */
+}
