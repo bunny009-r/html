@@ -1,0 +1,25 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+nav{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(22, 22, 23, .8);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255,255, .8);
+    span{
+        margin-left: 42px;
+    }
+}
+.nav-link{
+    color: rgba(255, 255,255, .8);
+    text-decoration: none;
+margin-left: 42px;
+font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+font-weight: 400;
+font-size: 12px;
+}

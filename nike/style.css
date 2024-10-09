@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo a img {
+    width: 18px;
+}
+
+.top {
+    padding: 0px 48px;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+   font: inherit;
+    justify-content: flex-end;
+}
+
+.custom-list li {
+    padding-right: 25px;
+}
+
+li a {
+    color: #111111d4;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+li a:hover {
+color: #11111188;
+    transition: color 0.3s ease; 
+}
+
+nav {
+    height: 60px;
+    padding: 0px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Initially, it will be in the normal document flow */
+    width: 92%;
+    background-color: #fff;
+    transition: top 0.3s ease-in-out;
+    box-shadow: none; /* No shadow initially */
+}
+
+.fixed-nav {
+    position: fixed; /* Once scrolled, it becomes fixed */
+    top: 0;
+    left: 0;
+  
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth when fixed */
+    z-index: 1000; /* Now it's on top when scrolled */
+}
+nav.hidden {
+    top: -60px; /* Move the navbar out of view */
+}
+
+
+.nike_logo
+{
+    display: flex;
+    justify-items: flex-start;
+    
+}
+.nike_logo a img {
+    max-width: 65px;
+    
+}
+
+.navlink-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+a.navlink {
+    padding: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    color: #111111d4;
+    white-space: nowrap;
+    display: inline-block;
+    border-bottom: transparent solid 2px;
+}
+a.navlink:hover{
+   border-bottom:  #111111d4 solid 2px;
+}
+
+.navicon {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+.navicon a{
+    color: #111111d4;
+
+}
+.navicon a:hover{
+    background-color: #eaeaea;
+ 
+
+}
+.search-bar {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 40%;
+}
+
+.search-input {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 10px;
+    width: 50%;
+    height: 100%;
+}
+.search-bar:hover{
+    background-color: #eaeaea;
+}
+
+
+#search {
+    display: none;
+    text-decoration: none;
+   
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.hamburger-menu span {
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    display: block;
+}
+
+@media(max-width: 1200px){
+    .search-bar {
+        display: none;
+    }
+
+    #search {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+@media (max-width: 960px) {
+    .top {
+        display: none;
+    }
+
+   
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navlink-container {
+        display: none; /* Hide nav links by default on smaller screens */
+        flex-direction: column;
+        background-color: #fff;
+        
+        position: absolute;
+        transform: none;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navlink-container.active {
+        display: flex; /* Show the nav links when the hamburger menu is clicked */
+    }
+}
+.bottom{
+    padding: 10px;
+    background-color: #f2f2f2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    color: #111111d4;
+   
+
+  
+}
+.bottom a{
+    color: #111111d4;
+
+}
+@media (max-width: 768px) {
+    .bottom h3 {
+        font-size: 1rem; /* Smaller font size for mobile */
+        text-align: center;
+    }
+
+    .bottom p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        text-align: center;
+    }
+
+    .bottom a {
+        font-size: 0.9rem; /* Adjust link size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+main{
+
+    margin: 0px 50px;
+}
+
+.banner{
+    max-width: 1585px;
+    display: flex;
+    flex-wrap: nowrap;
+flex-direction: column;
+   
+}
+.banimg .bigimg {
+    max-width: 1480px; 
+    width: 100%;       
+    height: auto;      
+    display: block;    
+}
+.banimg .longimg{
+    display: none;
+}
+@media (max-width:780px)
+{
+    main{
+        margin: 0px 8%;
+    }
+    .banimg .bigimg {
+        display: none;
+    }
+    .banimg .longimg{
+        display: block;
+        
+        width: 100%;
+        height: auto;
+    }
+}
+.ban-content{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    height: 185px;
+    padding: 20px 0px;
+    font: inherit;
+}
+.ban-content p{
+    font-size: 3vw;
+}
+.ban-content .bottom-p{
+   text-align: center;
+        margin-bottom: 10px;
+}
+
+.ban-content h3 {
+    font-size: 6vw; 
+    font-weight: 900;
+   
+}
+.ban-content button{
+    font-size: 2vw;
+    font-weight: 700;
+    background-color: #000;
+    border-radius: 50px;
+    border: none;
+    height: 5vw;
+    width: 15vw;
+    color: #fff;
+}
+
+/* Optional media query for larger screens */
+@media (min-width: 960px) {
+    .ban-content h3 {
+        font-size: 70px; /* Fixed size for larger screens */
+    }
+    .ban-content p{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .ban-content .top-p{
+   
+        margin-bottom: -10px;
+        font-weight: 550;
+    }
+    .ban-content .bottom-p{
+   
+        margin-top: -10px;
+        margin-bottom: 20px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .ban-content button{
+      padding: 10px;
+      width: 150px;
+      font-size: 15px;
+       
+    }
+   
+}
+.Featured-container {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 1%; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.Featured-data {
+    flex: 1 1 480px;
+    max-width: 480px; 
+    text-decoration: none ;
+   
+}
+
+.Featured-data img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+.Featured-data .data-text{
+    padding: 10% 0px;
+    color: #111111d4;
+   h3{
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 600;
+   }
+   
+}
+.new-col-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.collection-img{
+    
+    max-width:280px;
+    
+    color: #111111d4;
+    text-decoration: none;
+    
+}
+.collection-data{
+    padding: 20px 0px;
+}
+.collection-img img{
+   
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.collection-img .Shoes-for {
+    margin: 5px 0;
+ font-size: .8rem;
+}
+footer{
+    background-color: #f2f2f2;
+   
+    display: flex;
+    flex-direction: column;
+   
+    padding: 50px;
+   
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer-end{
+  border-top:  #1111112b solid 1px;
+    padding:20px 0px 0px 0px;
+    width: 100%;
+    color: #111111d4;
+   
+   a{
+    margin: 0px 10px;
+   }
+
+}
+@media (max-width: 580px)
+{
+    .footer-top{
+        flex-direction: column;
+    } 
+
+    .footer-end{
+        display: flex;
+   
+        flex-direction: column;
+
+        span, a{
+            margin: 5px 0px;
+           }
+    } 
+}
+.top-left{
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.top-right select {
+    border: none;
+    background-color: transparent; /* Optional: Makes the background transparent */
+    font-size: 16px; /* Optional: Adjust font size */
+    padding: 5px; /* Optional: Add padding for better spacing */
+    appearance: none; /* Removes default dropdown arrow styling in some browsers */
+    outline: none; /* Removes outline on focus */
+}
+
+
+.resource,.help,.company{
+    display: flex;
+    flex-direction: column;
+   
+}
+footer h3{
+margin: 20px 0px;
+font-size: 14px;
+font:inherit;
+}
+footer a{
+    text-decoration: none;
+    color: #111111d4;
+   padding: 8px 0px;
+     font-size: 14px;
+    
+}
